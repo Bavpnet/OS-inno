@@ -11,11 +11,11 @@ var
 boot
 media
 snap
-etc
 root
 home
-dev
-run
+etc
 tmp
 sys
 proc
+run
+dev
