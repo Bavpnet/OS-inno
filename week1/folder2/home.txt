@@ -1,0 +1,13 @@
+Videos
+Templates
+Public
+Pictures
+Music
+Downloads
+Documents
+snap
+put.txt
+output.txt
+errors.txt
+Desktop
+week1
