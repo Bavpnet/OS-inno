@@ -1,0 +1,5 @@
+/usr/bin/gcc-nm
+/usr/bin/gcc-ar-11
+/usr/bin/gcc-ar
+/usr/bin/gcc-11
+/usr/bin/gcc
