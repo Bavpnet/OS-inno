@@ -11,7 +11,7 @@ long int Tribonacci (long int n){
     long int it3 = 1;
     long int trib = it1+it2+it3;
 
-    for (int i = 3; i < n; i++){
+    for (int i = 3; i <= n; i++){
         trib = it1+it2+it3;
         it1 = it2;
         it2 = it3;
@@ -22,8 +22,9 @@ long int Tribonacci (long int n){
 }
 
 int main () {
+    
     printf("%ld \n", Tribonacci(4));
-     printf("%ld \n", Tribonacci(36));
+    printf("%ld \n", Tribonacci(36));
     return 0;
 
 }
