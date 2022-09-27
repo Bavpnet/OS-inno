@@ -1,0 +1,4 @@
+Every five seconds , the running process created a fork(). Every next 
+Each successive process creates another one, in the end I got the tree of processes.
+Number of forks == 3. The last process has depth == 3;
+Number of forks == 5. The last process has depth == 5. 
