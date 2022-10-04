@@ -1,0 +1,5 @@
+execution time was 4 s.
+execution time was 2 s.
+execution time was 2 s.
+execution time was 1 s.
+execution time was 0 s.

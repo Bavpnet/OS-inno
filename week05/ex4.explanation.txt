@@ -1,0 +1,7 @@
+I got execution time 4s for 1 thread, 2s for 2 and 4, 10 and 100 threads on macOS. 
+
+In this task we encountering with mutex, to lock and unlock changing variables. And this process (locking and unlocking) takes time.
+For 2,4, 10 and 100 threads we have several these procedures, so we got the same result for these tests.
+
+Comparing with ex3, we got slower execution for 2,4,10 and 100, beacuse we are use global common variables and we nned need to wait
+to lock/unlock them.

@@ -1,0 +1,9 @@
+I got execution time 4s for 1 thread, 2s for 2 and 4 threads, 1s for 10 threads and 0s for 100 threads om macOS.
+
+These timing results are based on the multithreading processes. For the first case (4s), it will be the same time as
+ususal sequential process. It is because the process is not parallelized.
+
+For the next cases we will get a multithreading version of the process. It is because the process is parallelized. 
+For 10 - 100 threads we get efficient multithreading result.
+But for A LOT OF threads (I decided to test with 100000) we will get a huge execution time - 45s. In this case other processes
+have to wait for the first ones to finish in the CPU. It is because the CPU has a limited number of cores.
