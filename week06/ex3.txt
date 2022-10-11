@@ -1,0 +1,30 @@
+In the first and second exercises we used the First Come First Service (FCFS) and The Shortest Job First (SJF) respectively.
+
+In the third task we use another concept which is the Round Robin (RR) algorithm. 
+The main difference between the FCFS and SJF is preemptivity. In this case, we can stop the process during execution and start another one,
+which is impossible in previous algorithms.
+
+Also the RR algorithm has a Time of Quantum, that means the process will be executed in the CPU just this time. After that,
+it will be stopped and another prcoess from the process queue will be executed the Quantum Time.
+
+There are a lot of advantages, but the main are:
+ - all processes get a fair allocation in the CPU
+ - it gives the beast performance in the average case
+ - does not depend of the waiting time of the processes
+
+The disadvantage is that the performance is dependent of the Quantum Time, and this method spends time of context switching.
+
+RR:
+
+        Arrival Time     Burst Time     Completion Time Turn Around Time        Waiting Time
+P E|    1               |3              |4              |3                      |0
+P A|    3               |16             |39             |36                     |20
+P C|    3               |3              |12             |9                      |6
+P B|    7               |7              |29             |22                     |15
+P D|    8               |9              |33             |25                     |16
+Average turn around time = 19.000000
+Average waiting time = 11.400000
+Number of quantum = 5
+
+In general the response time is better, because in this algorithm we can execute long time processes without very long wait.
+In other aspects, it can give less efficient results than the previous algorithms.

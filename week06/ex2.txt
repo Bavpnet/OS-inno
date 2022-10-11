@@ -1,0 +1,38 @@
+In ex1.c we use First Come First Service (FCFS) non-preemptive algorithm of scheduling processes. There we sorted our input of the processes
+by their arrival time. This algorithm can be easily to understand and choosing which process will be execute next is easy.
+
+Besides, there are some disadvantages. Through put is very low and average waiting time is very high.
+
+In ex2.c we use The Shortest Job First (SJF) non-preemptive algorithm of scheduling processes. There we sorted our input of the processes by arrival time firstly, and
+if it is the same arrival time, we sorted them by their burst time.
+This algorithm is better than FCFS algorithm, because it can reduce the average waiting time, due to short burst time processes will be executed first.
+
+The main disadvantage is that if there is a long process it can have waiting state for long time, because short processes will be executed first.
+
+Comparison of the results:
+
+Number of processes: 5
+Arrival time: 10 7 3 9 1
+Burst time: 16 7 3 9 12
+
+FCFS:
+        Arrival Time     Burst Time     Completion Time Turn Around Time        Waiting Time
+P E|    1               |3              |4              |3                      |0
+P A|    3               |16             |20             |17                     |1
+P C|    3               |3              |23             |20                     |17
+P B|    7               |7              |30             |23                     |16
+P D|    8               |9              |39             |31                     |22
+Average turn around time = 18.799999
+Average waiting time = 11.200000
+
+SJF:
+        Arrival Time     Burst Time     Completion Time Turn Around Time        Waiting Time
+P E|    1               |3              |4              |3                      |0
+P C|    3               |3              |7              |4                      |1
+P B|    7               |7              |14             |7                      |0
+P D|    8               |9              |23             |15                     |6
+P A|    3               |16             |39             |36                     |20
+Average turn around time = 13.000000
+Average waiting time = 5.400000
+
+In general, the average waiting time od SJF is less than FCFS waiting time.
