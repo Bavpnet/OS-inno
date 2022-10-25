@@ -1,0 +1,2 @@
+text    data     bss     dec     hex filename
+1631     644       4    2279     8e7 ex1
