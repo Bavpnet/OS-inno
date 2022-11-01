@@ -1,0 +1,1 @@
+vm_stat > ex1.txt

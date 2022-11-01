@@ -1,0 +1,3 @@
+The major difference between virtual and physical memory adress is that virtual memory has a logical address (user cannot see the address directly)
+and physical memory has a physical address (has a location into memory chip).
+Next, the virtual address doesn't exist in real memory, but using paging, the virtual address is translated into a physical address.

@@ -1,0 +1,6 @@
+A machine has 16-bit virtual addresses.
+Pages are 8 KB. How many entries are needed for a single-level linear page table? Explain your computations.
+----------------------------------------------------------------------------------------------------------------
+
+To indexing 8 KB we need to store 2^13 bits. It will be a page size. Offset is 13 bits. Therefore, we need a 
+2^(16-13) = 8 entries for single-level linear page table.
