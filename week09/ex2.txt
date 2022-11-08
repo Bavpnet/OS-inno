@@ -1,0 +1,11 @@
+Try to construct a sequence of references that will result in increased or decreased Hit/Miss ratio
+---------
+To increase the Miss number, we can construct current sequence:
+1 2 3 4 5 6 7 8 9 1 2 3 4 5 6 7 8 9.... and etc for 8-bit page
+Or we can create a sequence with all different numbers. In this cases, there will be always Misses
+
+On the other hand, to increase the Hits, we can construct current sequence:
+1 2 3 4 5 6 7 8 1 2 3 4 5 6 7 8 and etc for 8-bits pageIn this case, there will be just 8 misses for the 1st elements, 
+but for the futher iterations there will not be any misses
+Or we can create a sequence with all the same numbers like:
+1 1 1 1 1 1 1 1 and etc
