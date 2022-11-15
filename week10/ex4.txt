@@ -1,0 +1,3 @@
+12755587 i-node
+link1 --- link1 file1 
+file1 --- link1 file1 

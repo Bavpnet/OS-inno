@@ -1,0 +1,12 @@
+1) What does 660 mean for ex3.txt?
+2) What does 775 mean for ex3.txt?
+3) What does 777 mean for ex3.txt?
+______________________________________
+660 = 110 110 100
+775 = 111 110 101
+777 = 111 111 111
+   rwx rwx rwx
+    u	g   o
+1) 110 110 000 user(u) and group(g) can read/write, others(o) cannot do anything
+2) 111 111 101 user(u) and group(g) can read/write/execute, others(o) can read/execute
+3) 111 111 111 user/group/others can read/write/execute
