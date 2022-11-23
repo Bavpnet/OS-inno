@@ -1,33 +1,35 @@
-  lib
-  file1
-  ..  
-  lib64  
-  ex2.txt  
-  ex2.c  
-  .  
-  bin  
-  ex2.o  
-  lost+found  
-  file2  
-  lib  
-  file1  
-  ..  
-  lib64  
-  ex2.txt  
-  ex2.c  
-  .  
-  bin  
-  ex2.o  
-  lost+found  
-  file2  
-  lib  
-  file1  
-  ..  
-  lib64  
-  ex2.txt  
-  ex2.c  
-  .  
-  bin  
-  ex2.o  
-  lost+found  
-  file2  
+name = lib
+name = file1
+name = ..
+name = lib64
+name = ex2.txt
+name = ex2.c
+name = .
+name = bin
+name = .Trash-1000
+name = ex2.o
+name = lost+found
+name = file2
+name = boot
+name = var
+name = media
+name = sbin
+name = mnt
+name = dev
+name = snap
+name = tmp
+name = lib
+name = home
+name = bin
+name = root
+name = srv
+name = usr
+name = .
+name = etc
+name = lost+found
+name = swap.img
+name = ..
+name = proc
+name = opt
+name = run
+name = sys
