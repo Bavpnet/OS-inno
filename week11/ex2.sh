@@ -15,43 +15,16 @@ cp /bin/cat bin/cat
 cp /bin/echo bin/echo
 cp /lib/aarch64-linux-gnu/libc.so.6 lib64/ #I have arm processor due to mac on M1 chip
 
-cmd="bash"
-for i in $cmd
+ar=("bash" "ls" "cat" "echo")
+for item in $ar[@]
 do
-   list="$(ldd /bin/$i | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
+   list="$(ldd /bin/$item | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
    for j in $list
    do
       cp -v "$j" ".$j"
    done
 done
 
-cmd="ls"
-for i in $cmd
-do
-   list="$(ldd /bin/$i | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
-   for j in $list
-   do
-      cp -v "$j" ".$j"
-   done
-done
-cmd="cat"
-for i in $cmd
-do
-   list="$(ldd /bin/$i | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
-   for j in $list
-   do
-      cp -v "$j" ".$j"
-   done
-done
-cmd="echo"
-for i in $cmd
-do
-   list="$(ldd /bin/$i | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
-   for j in $list
-   do
-      cp -v "$j" ".$j"
-   done
-done
 cd ..
 
 gcc ex2.c -o ./lofsdisk/ex2.o
