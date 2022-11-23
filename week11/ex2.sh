@@ -16,7 +16,7 @@ cp /bin/echo bin/echo
 cp /lib/aarch64-linux-gnu/libc.so.6 lib64/ #I have arm processor due to mac on M1 chip
 
 ar=("bash" "ls" "cat" "echo")
-for item in $ar[@]
+for item in $ar
 do
    list="$(ldd /bin/$item | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
    for j in $list
