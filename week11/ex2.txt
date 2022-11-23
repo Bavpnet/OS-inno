@@ -1,5 +1,5 @@
-lib
-file1
+  lib
+  file1
   ..  
   lib64  
   ex2.txt  
