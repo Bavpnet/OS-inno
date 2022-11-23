@@ -1,0 +1,33 @@
+lib
+file1
+  ..  
+  lib64  
+  ex2.txt  
+  ex2.c  
+  .  
+  bin  
+  ex2.o  
+  lost+found  
+  file2  
+  lib  
+  file1  
+  ..  
+  lib64  
+  ex2.txt  
+  ex2.c  
+  .  
+  bin  
+  ex2.o  
+  lost+found  
+  file2  
+  lib  
+  file1  
+  ..  
+  lib64  
+  ex2.txt  
+  ex2.c  
+  .  
+  bin  
+  ex2.o  
+  lost+found  
+  file2  
