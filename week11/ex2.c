@@ -5,13 +5,13 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int argc, char *argv[]) {
+int main() {
    DIR *dir;
-   struct dirent *ent;
+   struct dirent *entry;
 
    dir = opendir("/");
-   while ((ent = readdir(dir)) != NULL) {
-      printf(" %s \n", ent->d_name);
+   while ((entry = readdir(dir)) != NULL) {
+      printf("name = %s\n", entry->d_name);
    }
    closedir(dir);
 
