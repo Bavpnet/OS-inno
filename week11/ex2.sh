@@ -6,7 +6,7 @@ cat file1
 cat file2
 mkdir bin
 mkdir lib
-mkdir lib/aarch64-linux-gnu
+mkdir lib/aarch64-linux-gnu #M1 chip
 mkdir lib64
 
 cp /bin/bash bin/bash
@@ -15,13 +15,15 @@ cp /bin/cat bin/cat
 cp /bin/echo bin/echo
 cp /lib/aarch64-linux-gnu/libc.so.6 lib64/ #I have arm processor due to mac on M1 chip
 
-ar=("bash" "ls" "cat" "echo")
+ar=("bash" "ls" "cat" "echo") #array of command
 for item in $ar
 do
    list="$(ldd /bin/$item | awk 'NF == 4 {print $3}; NF == 2 {print $1}' | grep /lib)"
+   #NF is a predefined variable whose value is the number of fields in the current record. 
+   #awk updates the NF
    for j in $list
    do
-      cp -v "$j" ".$j"
+      cp -v "$j" ".$j" #Outputs a message after the copy operation. 
    done
 done
 
