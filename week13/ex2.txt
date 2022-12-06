@@ -1,0 +1,20 @@
+According to our lecture there are following types of dealing with deadlocks:
+1) Recovery and detection
+2) Prevention
+3) Avoidance
+
+
+1) Recovery and detection
+
+This strategy does not limit the resourses access or restrict process action. 
+It is reasonable to use this method when it is possible to kill a process or displace its resources.
+But we can not use it in real-time systems.
+
+
+2) Prevention
+We can try to construct a system that the deadlock will be excluded (Hold and wait, Mutual exclusion , Circular wait)
+It can be used in real-time systems.
+
+3) Avoidance
+The hardest variant because the systems must know about the deadlock before it happens. There we can use Banckers algorithm.
+The best way to use it when we know about requests of proccess. And we are sure that won't change.
